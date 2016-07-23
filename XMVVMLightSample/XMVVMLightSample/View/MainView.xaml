@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XMVVMLightSample;assembly=XMVVMLightSample"
+             BindingContext="{x:Static local:ViewModel.ViewModelLocator.Main}"
+             x:Class="XMVVMLightSample.View.MainView">
+  <StackLayout>
+    <Label Text="MainView"/>
+    <Entry Text="{Binding InputText}"/>
+    <Label Text="{Binding LabelText}" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Button Text="Button" Command="{Binding Command}"/>
+  </StackLayout>
+</ContentPage>
